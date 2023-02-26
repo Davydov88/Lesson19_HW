@@ -24,7 +24,7 @@ class UserView(Resource):
         return "", 201
 
 
-@user_ns.route('/<int: uid>')
+@user_ns.route('/<int:uid>')
 class UserView(Resource):
     @auth_required
     def get(self, uid):
